@@ -9,12 +9,17 @@
 <body>
     <div class="game-container">
         <h1>TrackIt</h1>
-        <p id="timer">Time Left: 30s</p>
-        <audio id="audio" controls></audio>
-        <input type="text" id="guess-input" placeholder="Type your guess here...">
-        <button id="submit-btn">Submit Guess</button>
-        <p id="feedback"></p>
-        <p id="score">Score: 0</p>
+        <p id="instructions">Press "Start Game" to begin!</p>
+        <button id="start-btn" class="btn">Start Game</button>
+
+        <div id="game-interface" class="hidden">
+            <p id="timer">Time Left: 30s</p>
+            <audio id="audio" controls class="hidden"></audio>
+            <input type="text" id="guess-input" placeholder="Type your guess here..." disabled>
+            <button id="submit-btn" class="btn" disabled>Submit Guess</button>
+            <p id="feedback"></p>
+            <p id="score">Score: 0</p>
+        </div>
     </div>
 
     <script src="script.js"></script> <!-- Link to your JavaScript file -->
